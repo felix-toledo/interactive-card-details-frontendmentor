@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Billetera de Tarjetas</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="tarjeta">
+      <div class="cardFront">
+        <img src="./images/card-logo.svg" alt="cardLogo">
+        <p class="inCardNumber" id="inCardNumber">0000 0000 0000 0000</p>
+        <div class="secondLine"> <span class="inCardName" id="inCardName">FELIX TOLEDO</span><span class="inCardExpDate" id="inCardExpDate">00/00</span></div>
+      </div>
+      <div class="cardBack">
+        <p class="inCardCVC" id="inCardCVC">000</p>
+      </div>
+</div>
+<div class="contenedorTarjetas">
+  <button class="btnVerT" id="verTarjetas">Mis Tarjetas</button>
+  <div class="contenedorTarjetasGuardadas_no" id="contenedorTarjetasGuardadas">
+    <div class="tarjetaGuardada"><span class="number1">4345</span><p class="name1">Felix Toledo</p></div>
+    <div class="tarjetaGuardada"><span class="number1">4345</span><p class="name1">Felix Toledo</p></div>
+    <div class="tarjetaGuardada"><span class="number1">4345</span><p class="name1">Felix Toledo</p></div>
+    <div class="tarjetaGuardada"><span class="number1">4345</span><p class="name1">Felix Toledo</p></div>
+  </div>
+</div>
+  <div class="formulario">
+    <form>
+      <label for="name">Nombre que figura en la tarjeta</label><br>
+      <input required type="text" id="name" name="name" placeholder="Felix Toledo">
+
+      <label for="cardNumber">Número de tarjeta:</label>
+      <input required	type="text" name="cardNumber" id="cardNumber" placeholder="0000 0000 0000 0000">
+
+      <label for="expDate">Fecha de Vencimiento:</label>
+      <input required	type="text"  id="MM" name="expDate" placeholder="MM">
+      <input required	type="text" id="YY" name="expDate" placeholder="YY">
+
+      <label for="cvc">CVC</label>
+      <input required	type="text" name="cvc" id="cvc" placeholder="123">
+
+      <input type="submit" value="Confirmar" class="button-36" id="btnConf">
+    </form>
+  </div>
+  <div id="completeAdded" class="succesAdded_no">
+    <div class="containerAdded">
+      <img src="./images/icon-complete.svg" alt="checked">
+      <p>GRACIAS!</p>
+      <p>Agregamos tu tarjeta correctamente</p>
+      <button  class="button-36" id="btnCont">Continuar</button>
+    </div>
+  </div>
+  <script src="./script/app.js"></script>
+</body>
+</html>
