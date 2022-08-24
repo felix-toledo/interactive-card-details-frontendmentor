@@ -14,6 +14,7 @@ body{
     background-size:contain;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    overflow: hidden;
 }
 
 .contenedorTarjetas{
@@ -223,30 +224,4 @@ border-radius: 8px;
 
 form label{
     font-size: small;
-}
-
-.succesAdded_no{
-    position: absolute;
-    visibility: hidden;
-}
-
-.succesAdded{
-    position: absolute;
-    visibility: visible;
-    background-color: rgba(0,0,0, 0.4);
-    width: 100vw;
-    height: 100vh;
-}
-
-.containerAdded{
-    color: black;
-    width: 500px;
-    height: auto;
-    padding: 20px;
-    text-align: center;
-    margin: auto;
-    margin-top: 350px;
-    background-color: antiquewhite;
-    border: 2px black solid;
-    border-radius: 10px;
 }

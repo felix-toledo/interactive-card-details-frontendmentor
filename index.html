@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <title>Billetera de Tarjetas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- SE AGREGÓ LA LIBRERIA SWEET ALERT PARA LAS ALERTAS CUANDO SE CREAN O NO LAS TARJETAS.  -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link rel="stylesheet" href="./css/style.css">
+  <title>Billetera de Tarjetas</title>
 </head>
 <body>
   <div class="tarjeta">
@@ -43,14 +45,6 @@
 
       <input type="submit" value="Confirmar" class="button-36" id="btnConf">
     </form>
-  </div>
-  <div id="completeAdded" class="succesAdded_no">
-    <div class="containerAdded">
-      <img src="./images/icon-complete.svg" alt="checked">
-      <p>GRACIAS!</p>
-      <p>Agregamos tu tarjeta correctamente</p>
-      <button  class="button-36" id="btnCont">Continuar</button>
-    </div>
   </div>
   <script src="./script/app.js"></script>
 </body>

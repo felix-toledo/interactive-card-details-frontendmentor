@@ -67,11 +67,22 @@ function inputChanged(){
 function guardarTarjeta(event){
     event.preventDefault()
     if(inputCVC == "" || inputMonth.value == "" || inputYear.value == "" || inputNumber.value == "" || inputName.value == ""){
-        alert("faltan datos");
+        //alerta de la libreria Sweet Alert .
+        //Added sweet alert action.
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Al parecer no completaste todos los datos importantes!',
+          })
     } else {
         tarjetas.push(new tarjeta(inputNumber.value, inputName.value, inputCVC.value, inputMonth.value, inputYear.value, 0));
-        localStorage.setItem("tarjetas", JSON.stringify(tarjetas));
-        success.setAttribute("class", "succesAdded");
+        //alerta de la libreria Sweet Alert .
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Tu tarjeta fue grabada correctamente!',
+            showConfirmButton: true,
+          })
         limpiarDatos();
     }
 }

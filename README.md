@@ -67,6 +67,8 @@ I learned some JS things on a course to start my first JS frontend mentor challe
 - Events.
 - Storage & JSON.
 
+- In the last commit I added and learned about librearies, so I tryed with sweet alert librery.
+
 ### Useful resources
 
 - [CODERHOUSE](https://www.coderhouse.com/online/javascript) - This is the place where I am studying.
