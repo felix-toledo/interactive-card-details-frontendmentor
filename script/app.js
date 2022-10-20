@@ -1,3 +1,5 @@
+alert ("No, En mi casa!")
+
 class tarjeta{
     constructor(number, name, cvc, month, year, times){
         this.number = number;
