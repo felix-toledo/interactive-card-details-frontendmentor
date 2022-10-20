@@ -1,4 +1,4 @@
-alert ("No, En mi casa!")
+alert("No, En mi casa!");
 
 class tarjeta{
     constructor(number, name, cvc, month, year, times){
